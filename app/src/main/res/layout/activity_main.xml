@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7F7F7"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/titleConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Chat - Connect"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#4EA3E3"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="36dp" />
+
+        <Button
+            android:id="@+id/btnStartAdvertising"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Start Advertising"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnDiscoverDevices"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Discover Devices"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available devices"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvDevicePlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/device_box"
+            android:gravity="center"
+            android:text="Discovered devices will appear here"
+            android:textColor="#888888"
+            android:textSize="18sp"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/tabHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Home"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/tab_selected" />
+
+        <Button
+            android:id="@+id/tabChatroom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Chatroom"
+            android:textAllCaps="false"
+            android:textColor="#333333"
+            android:background="@drawable/tab_unselected" />
+
+        <Button
+            android:id="@+id/tabTools"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tools"
+            android:textAllCaps="false"
+            android:textColor="#333333"
+            android:background="@drawable/tab_unselected" />
+
+    </LinearLayout>
+
+</LinearLayout>
